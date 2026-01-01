@@ -16,7 +16,6 @@ local threads = {}
 local startTime = os.clock()
 local ramp = 1
 
--- Utility
 local function clamp(n, max)
 	if n > max then return max end
 	return n
@@ -117,5 +116,4 @@ task.spawn(function()
 		)
 		task.wait(5)
 	end
-	print("Stress test completed")
 end)
